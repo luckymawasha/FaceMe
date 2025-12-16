@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
-import { Button } from '@/components/ui/button';
+import { Button } from './components/ui/button';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuthStore } from '@/store/authStore';
+import { useAuthStore } from './store/authStore';
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
