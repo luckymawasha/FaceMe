@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { useAuthStore } from "./store/authStore";
+import { useAuthStore } from "./zustand/authStore";
 import AuthPage from "./components/auth/AuthPage";
 import FeedPage from "./pages/FeedPage";
 import WatchPage from "./pages/WatchPage";
