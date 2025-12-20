@@ -12,11 +12,11 @@ export default defineConfig({
     react(),
   ],
   resolve: {
-    preserveSymlinks: true,
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+  alias: {
+    "@": "/src",
   },
+}
+
   server: {
     // @ts-ignore
     allowedHosts: true,
