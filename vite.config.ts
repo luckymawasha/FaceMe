@@ -1,15 +1,17 @@
-import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/facemex/',
+  base: "/facemex/",
+
+  plugins: [react()],
+
   optimizeDeps: {
     entries: ["src/main.tsx", "src/tempobook/**/*"],
   },
-   plugins: [react()],
-   resolve: {
+
+  resolve: {
     alias: {
       "@": "/src",
     },
@@ -17,10 +19,7 @@ export default defineConfig({
 
   server: {
     port: 5173,
-  },
-});
-  server: {
     // @ts-ignore
     allowedHosts: true,
-  }
+  },
 });
